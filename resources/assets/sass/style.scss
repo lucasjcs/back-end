@@ -1,0 +1,268 @@
+@import "vendor/bootstrap.min.css";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+$mobile: "(min-width: 320px) and (max-width: 767px)";
+$mobile-small: "(min-width: 320px) and (max-width: 340px)";
+body{
+    background-color: #f4f4f4;
+}
+#header{
+    position: relative;
+    width: 100%;
+    background-color: #ff0000;
+    height: 60px;
+
+    h1{
+        position: relative;
+        display: table;
+        margin: 0 auto;
+        padding-top: 5px;
+        z-index:1;
+    }
+    #minha-conta{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        color: #FFF;
+        text-decoration: none;
+        font-size: 18px;
+        z-index: 1;
+        @media #{$tablet}{
+            right: 25px;
+        }
+    }
+
+    &.header-expandido{
+        height: 160px;
+        margin-bottom: -85px;
+    }
+}
+#content{
+    &.listagem-de-conteudo{
+        max-width: 730px;
+    }
+}
+.item-box{
+    @media #{$mobile-small}{
+        padding: 0px;
+    }
+    a{
+        display: block;
+        height: 120px;
+        border-radius: 2px;
+        background-color: #ffffff;
+        box-shadow: 0 1px 0.2px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+
+        @media #{$tablet} and #{$desktop}{
+            max-width: 350px;
+        }
+        figure{
+            float: left;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+        }
+        div.texts{
+            font-family: Roboto;
+            float: left;
+            margin-top: 10px;
+
+            h3{
+                font-weight: bold;
+                font-size:18px;
+                color: #000;
+                margin: 0; padding: 0;
+                margin-bottom: 15px;
+                margin-top: 10px;
+            }
+            p{
+                i{
+                    margin-right: 10px;
+                }
+            }
+            p.type, p.estime-time{
+                font-weight: 300;
+                font-size: 15px;
+                color: #8c8c8c;
+                margin: 0; padding: 0;
+                min-height: 14px;
+            }
+            p.type{
+                margin-bottom: 5px;
+            }
+
+        }
+
+    }
+}
+
+#company{
+    position: relative;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0 1px 0.2px 0 rgba(0, 0, 0, 0.2);
+    font-family: Roboto;
+    @media #{$mobile}{
+        padding-bottom: 10px;
+    }
+    header{
+        figure{
+            float: left;
+            margin-top: 20px;
+            margin-right: 21px;
+            display: table;
+        }
+        div.text{
+            float: left;
+            width: 160px;
+            margin-top: 20px;
+            @media #{$desktop}{
+                width: 400px;
+                .row{
+                    margin-top: 15px;
+                }
+            }
+
+            .row {
+                margin-left: 0px;
+            }
+
+            h1{
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+
+                @media #{$desktop}{
+                    font-size: 24px;
+                }
+            }
+
+            p{
+                font-weight: 300;
+                font-size: 15px;
+                color: #8c8c8c;
+                margin: 0; padding: 0;
+                min-height: 14px;
+                margin-bottom: 5px;
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+#cardapio{
+    margin-top: 20px;
+    font-family: Roboto;
+    h2{
+        font-size: 15px;
+        font-weight: 500;
+        color: #8c8c8c;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    article.item{
+        position: relative;
+        display: table;
+        padding: 10px 20px;
+        border-radius: 2px;
+        background-color: #ffffff;
+        box-shadow: 0 1px 0.2px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+        font-family: Roboto;
+        width: 100%;
+        .info{
+            float: left;
+            width: 68%;
+            h3{
+                font-size: 18px;
+                font-weight: bold;
+                padding: 0; margin: 0;
+                margin-bottom: 5px;
+            }
+            p{
+
+                font-size: 13px;
+                color: #8c8c8c;
+                font-weight: 300;
+                padding: 0; margin: 0;
+            }
+        }
+        .valor-text{
+            position: absolute;
+            width: 30%;
+            display: table;
+            right: 20px;
+            bottom: 5px;
+            h4{
+                font-weight: 300;
+                font-size: 13px;
+                color: #8c8c8c;
+                text-align: right;
+                margin: 0;
+                margin-bottom: 2px;
+            }
+            h5{
+                font-size: 18px;
+                font-weight: bold;
+                text-align: right;
+                color: #3fcb2a;
+            }
+        }
+    }
+}
+#sidebar{
+    display: block;
+    background-color: #FFF;
+    padding-bottom: 0px;
+
+    h2{
+        padding: 20px;
+        font-size: 16px;
+        color: #000;
+        text-transform: capitalize;
+        border-bottom: 2px solid #f4f4f4;
+    }
+    ul{
+        padding: 20px;
+        li{
+            display: flex;
+            padding: 0;
+            font-family: Roboto;
+            margin-bottom: 10px;
+            justify-content: space-between;
+            .text{
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .price{
+                align-self: flex-end;
+                font-size: 18px;
+                color: #8c8c8c;
+            }
+            &.total-pedido{
+                .price{
+                    color: #3fcb2a;
+                    font-weight: 500;
+                }
+            }
+            &.item-carrinho{
+                button{
+                    float: left;
+                    background-color: #FFF;
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                    cursor: pointer;
+                    margin-right: 10px;
+                    i{
+                        color: red;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
