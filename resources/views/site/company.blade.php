@@ -4,7 +4,7 @@
         <header class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <figure><img src="/img/trash/logo.jpg" srcset="/img/trash/logo@2x.jpg 2x,/img/trash/logo@3x.jpg 3x" class="logo"></figure>
+                   <img src="/img/trash/logo.jpg" srcset="/img/trash/logo@2x.jpg 2x,/img/trash/logo@3x.jpg 3x" class="logo" />
                     <div class="text">
                         <h1>El Encontro music restaurante</h1>
                         <div class="row">

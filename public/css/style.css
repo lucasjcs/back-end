@@ -125,16 +125,20 @@
   }
 }
 
-#company header figure {
+#company header img {
   float: left;
+  padding: 0;
+  margin: 0;
   margin-top: 20px;
   margin-right: 21px;
   display: table;
+  width: 100px;
+  height: 100px;
 }
 
 #company header div.text {
   float: left;
-  width: 160px;
+  width: auto;
   margin-top: 20px;
 }
 
