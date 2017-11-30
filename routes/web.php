@@ -5,7 +5,6 @@ Route::get('/', function () {
     return view('site/index');
 });
 
-Route::get('/delivery/{slug}', function () {
+Route::get('/{id}', function () {
     return view('site/company');
 });
-

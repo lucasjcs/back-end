@@ -47,7 +47,7 @@
   max-width: 730px;
 }
 
-@media (min-width: 320px) and (max-width: 340px) {
+@media (min-width: 320px) and (max-width: 360px) {
   .item-box {
     padding: 0px;
   }
@@ -61,6 +61,13 @@
   -webkit-box-shadow: 0 1px 0.2px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 0.2px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  border: 0.5px solid #FFF;
+}
+
+.item-box a:hover {
+  border-bottom: 2px solid #ff0000;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) and (min-width: 1024px) {
@@ -140,13 +147,22 @@
   float: left;
   width: auto;
   margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  #company header div.text {
+    width: 180px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+  #company header div.text {
+    width: 138px;
+  }
 }
 
 @media (min-width: 1024px) {
-  #company header div.text {
-    width: 400px;
-  }
-
   #company header div.text .row {
     margin-top: 15px;
   }
@@ -206,6 +222,14 @@
   margin-bottom: 10px;
   font-family: Roboto;
   width: 100%;
+  cursor: pointer;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  border-bottom: 2px solid transparent;
+}
+
+#cardapio article.item:hover {
+  border-bottom: 2px solid red;
 }
 
 #cardapio article.item .info {

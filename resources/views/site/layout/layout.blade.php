@@ -23,8 +23,11 @@
     </div>
 </header>
 
-@yield('content')
+<div id="app">
+   @yield('content')
+</div>
 
+<script src="{{ mix("js/app.js") }}"></script>
 <script src="js/vendor/jquery-3.2.1.min.js"></script>
 <script src="js/vendor/tether.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>

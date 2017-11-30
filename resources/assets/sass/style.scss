@@ -2,7 +2,7 @@
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
 $mobile: "(min-width: 320px) and (max-width: 767px)";
-$mobile-small: "(min-width: 320px) and (max-width: 340px)";
+$mobile-small: "(min-width: 320px) and (max-width: 360px)";
 body{
     background-color: #f4f4f4;
 }
@@ -53,6 +53,13 @@ body{
         background-color: #ffffff;
         box-shadow: 0 1px 0.2px 0 rgba(0, 0, 0, 0.2);
         margin-bottom: 10px;
+        transition: all 100ms ease-in;
+        border:0.5px solid #FFF;
+
+
+        &:hover{
+            border-bottom: 2px solid #ff0000;
+        }
 
         @media #{$tablet} and #{$desktop}{
             max-width: 350px;
@@ -115,13 +122,20 @@ body{
            display: table;
            width: 100px;
            height: 100px;
+
        }
         div.text{
             float: left;
             width: auto;
             margin-top: 20px;
+            padding-bottom: 15px;
+            @media #{$mobile}{
+                width: 180px;
+            }
+            @media #{$mobile-small}{
+                width: 138px;
+            }
             @media #{$desktop}{
-                width: 400px;
                 .row{
                     margin-top: 15px;
                 }
@@ -176,6 +190,13 @@ body{
         margin-bottom: 10px;
         font-family: Roboto;
         width: 100%;
+        cursor: pointer;
+        transition: all 100ms ease-in;
+        border-bottom: 2px solid transparent;
+    
+        &:hover{
+            border-bottom: 2px solid red;
+        }
         .info{
             float: left;
             width: 68%;
