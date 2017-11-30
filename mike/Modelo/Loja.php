@@ -3,10 +3,10 @@ namespace Mike\Modelo;
 
 
 use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Model;
 
-class Loja {
-
-    public $id;
+class Loja extends Model{
+	public $id;
     public $nome;
     public $imagem;
     public $telefone;

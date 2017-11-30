@@ -1,0 +1,230 @@
+@import url(vendor/bootstrap.min.css);
+body {
+  background-color: #f4f4f4; }
+
+#header {
+  position: relative;
+  width: 100%;
+  background-color: #ff0000;
+  height: 60px; }
+  #header h1 {
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    padding-top: 5px;
+    z-index: 1; }
+  #header #minha-conta {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    z-index: 1; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #header #minha-conta {
+        right: 25px; } }
+  #header.header-expandido {
+    height: 160px;
+    margin-bottom: -85px; }
+
+#content.listagem-de-conteudo {
+  max-width: 730px; }
+
+@media (min-width: 320px) and (max-width: 360px) {
+  .item-box {
+    padding: 0px; } }
+.item-box a {
+  display: block;
+  height: 120px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 0.2px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  transition: all 100ms ease-in;
+  border: 0.5px solid #FFF; }
+  .item-box a:hover {
+    border-bottom: 2px solid #ff0000; }
+  @media (min-width: 768px) and (max-width: 1023px) and (min-width: 1024px) {
+    .item-box a {
+      max-width: 350px; } }
+  .item-box a figure {
+    float: left;
+    margin: 10px;
+    width: 100px;
+    height: 100px; }
+  .item-box a div.texts {
+    font-family: Roboto;
+    float: left;
+    margin-top: 10px; }
+    .item-box a div.texts h3 {
+      font-weight: bold;
+      font-size: 18px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 15px;
+      margin-top: 10px; }
+    .item-box a div.texts p i {
+      margin-right: 10px; }
+    .item-box a div.texts p.type, .item-box a div.texts p.estime-time {
+      font-weight: 300;
+      font-size: 15px;
+      color: #8c8c8c;
+      margin: 0;
+      padding: 0;
+      min-height: 14px; }
+    .item-box a div.texts p.type {
+      margin-bottom: 5px; }
+
+#company {
+  position: relative;
+  width: 100%;
+  background-color: #FFF;
+  box-shadow: 0 1px 0.2px 0 rgba(0, 0, 0, 0.2);
+  font-family: Roboto; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    #company {
+      padding-bottom: 10px; } }
+  #company header img {
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-right: 21px;
+    display: table;
+    width: 100px;
+    height: 100px; }
+  #company header div.text {
+    float: left;
+    width: auto;
+    margin-top: 20px;
+    padding-bottom: 15px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      #company header div.text {
+        width: 180px; } }
+    @media (min-width: 320px) and (max-width: 360px) {
+      #company header div.text {
+        width: 138px; } }
+    @media (min-width: 1024px) {
+      #company header div.text .row {
+        margin-top: 15px; } }
+    #company header div.text .row {
+      margin-left: 0px; }
+    #company header div.text h1 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px; }
+      @media (min-width: 1024px) {
+        #company header div.text h1 {
+          font-size: 24px; } }
+    #company header div.text p {
+      font-weight: 300;
+      font-size: 15px;
+      color: #8c8c8c;
+      margin: 0;
+      padding: 0;
+      min-height: 14px;
+      margin-bottom: 5px; }
+      #company header div.text p i {
+        margin-right: 10px; }
+
+#cardapio {
+  margin-top: 20px;
+  font-family: Roboto; }
+  #cardapio h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #8c8c8c;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  #cardapio article.item {
+    position: relative;
+    display: table;
+    padding: 10px 20px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 0.2px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    font-family: Roboto;
+    width: 100%;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+    border-bottom: 2px solid transparent; }
+    #cardapio article.item:hover {
+      border-bottom: 2px solid red; }
+    #cardapio article.item .info {
+      float: left;
+      width: 68%; }
+      #cardapio article.item .info h3 {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 5px; }
+      #cardapio article.item .info p {
+        font-size: 13px;
+        color: #8c8c8c;
+        font-weight: 300;
+        padding: 0;
+        margin: 0; }
+    #cardapio article.item .valor-text {
+      position: absolute;
+      width: 30%;
+      display: table;
+      right: 20px;
+      bottom: 5px; }
+      #cardapio article.item .valor-text h4 {
+        font-weight: 300;
+        font-size: 13px;
+        color: #8c8c8c;
+        text-align: right;
+        margin: 0;
+        margin-bottom: 2px; }
+      #cardapio article.item .valor-text h5 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+        color: #3fcb2a; }
+
+#sidebar {
+  display: block;
+  background-color: #FFF;
+  padding-bottom: 0px; }
+  #sidebar h2 {
+    padding: 20px;
+    font-size: 16px;
+    color: #000;
+    text-transform: capitalize;
+    border-bottom: 2px solid #f4f4f4; }
+  #sidebar ul {
+    padding: 20px; }
+    #sidebar ul li {
+      display: flex;
+      padding: 0;
+      font-family: Roboto;
+      margin-bottom: 10px;
+      justify-content: space-between; }
+      #sidebar ul li .text {
+        font-weight: bold;
+        font-size: 16px; }
+      #sidebar ul li .price {
+        align-self: flex-end;
+        font-size: 18px;
+        color: #8c8c8c; }
+      #sidebar ul li.total-pedido .price {
+        color: #3fcb2a;
+        font-weight: 500; }
+      #sidebar ul li.item-carrinho button {
+        float: left;
+        background-color: #FFF;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        margin-right: 10px; }
+        #sidebar ul li.item-carrinho button i {
+          color: red;
+          font-size: 18px; }
+
+/*# sourceMappingURL=style.css.map */
